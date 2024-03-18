@@ -1,0 +1,83 @@
+/* Add your global styles or resets here if needed */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-[#f8f8f8] {
+    background-color: #f8f8f8;
+}
+
+.max-w-4xl {
+    max-width: 64rem; /* Adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-10 {
+    margin-bottom: 2.5rem; /* Adjust as needed */
+}
+
+.text-lg {
+    font-size: 1.125rem; /* Adjust as needed */
+}
+
+.leading-8 {
+    line-height: 1.8;
+}
+
+.font-extrabold {
+    font-weight: 800;
+}
+
+.tracking-tight {
+    letter-spacing: -0.02em;
+}
+
+.text-gray-900 {
+    color: #333; /* Adjust as needed */
+}
+
+.sm\:text-4xl {
+    font-size: 2.25rem; /* Adjust as needed */
+}
+
+/* Add more styles based on your needs */
+
+/* Styles for the contact form */
+
+/* ... Add your styles for form inputs, buttons, etc. */
+
+/* Example styles for buttons */
+.bg-primary {
+    background-color: #007bff; /* Adjust as needed */
+}
+
+.text-primary-foreground {
+    color: #fff; /* Adjust as needed */
+}
+
+.hover\:bg-primary\/90:hover {
+    background-color: rgba(0, 123, 255, 0.9); /* Adjust as needed */
+}
+
+/* Styles for the social icons */
+.text-blue-600 {
+    color: #007bff; /* Adjust as needed */
+}
+
+.text-pink-500 {
+    color: #ff69b4; /* Adjust as needed */
+}
+
+.text-red-600 {
+    color: #dc3545; /* Adjust as needed */
+}
+
+/* Add more styles based on your needs */

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Labels</title>
+</head>
+<body>
+    <label for="food1">Food 1:</label>
+    <input type="text" id="food1" name="food1"><br><br>
+
+    <label for="food2">Food 2:</label>
+    <input type="text" id="food2" name="food2"><br><br>
+
+    <button onclick="checkFood()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkFood() {
+            var food1 = document.getElementById('food1').value.toLowerCase();
+            var food2 = document.getElementById('food2').value.toLowerCase();
+            var resultParagraph = document.getElementById('result');
+
+            var validFoods = {
+                'fish': true,
+                'curd': true,
+                'pollen': true,
+                'apple': true,
+                'cherries': true,
+                'plums': true,
+                'almonds': true,
+                'hazelnuts': true,
+                'walnuts': true
+            };
+
+            if (!validFoods[food1] || !validFoods[food2]) {
+                resultParagraph.innerHTML = "This Food Combination will not cause the allergy.";
+            } else if (food1 === '' || food2 === '') {
+                resultParagraph.innerHTML = "Please enter both food items.";
+            } else {
+                if ((food1 === 'fish' && food2 === 'curd') || (food1 === 'pollen' && (food2 === 'apple' || food2 === 'cherries' || food2 === 'plums' || food2 === 'almonds' || food2 === 'hazelnuts' || food2 === 'walnuts' ))) {
+                    resultParagraph.innerHTML = `
+                        <span>This food combination may cause allergic reactions. Symptoms may include: </span>
+                        <ul>
+                            <li>Rashes</li>
+                            <li>Itching</li>
+                            <!-- Add more symptoms as needed -->
+                        </ul>
+                        <img src="hives img.jpg" alt="Rashes" style="width: 100px; height: auto;">
+                        <img src="swelling imge.jpg" alt="Itching" style="width: 100px; height: auto;">
+                        <!-- Add more images as needed -->
+                    `;
+                } else {
+                    resultParagraph.innerHTML = "";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
